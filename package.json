@@ -1,0 +1,20 @@
+{
+  "name": "fipe-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.21.0",
+    "joi": "^17.13.3",
+    "puppeteer": "^23.4.1",
+    "puppeteer-core": "^23.4.0",
+    "puppeteer-firefox": "^0.5.1"
+  }
+}
