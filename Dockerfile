@@ -31,10 +31,11 @@ COPY --chown=appuser:appgroup package*.json ./
 RUN npm install --no-optional
 
 # Copy the rest of the application files
-COPY --chown=appuser:appgroup app.js app.js
+COPY --chown=appuser:appgroup src/ ./src
+COPY --chown=appuser:appgroup .env ./.env
 
 # Expose the application port
 EXPOSE 3000
 
 # Run the application
-CMD ["node", "app.js"]
+CMD ["node", "src/app.js"]

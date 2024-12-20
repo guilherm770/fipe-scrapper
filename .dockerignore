@@ -1,0 +1,8 @@
+plaintext
+node_modules
+npm-debug.log
+.env
+.DS_Store
+docker-compose*
+coverage
+*.log
