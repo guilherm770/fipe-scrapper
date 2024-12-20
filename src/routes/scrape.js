@@ -1,5 +1,5 @@
 const express = require('express');
-const { scrapeHandler } = require('../services/scrape');
+const { scrapeHandler } = require('../services/handler');
 const { validateQuery } = require('../utils/validation');
 
 const router = express.Router();

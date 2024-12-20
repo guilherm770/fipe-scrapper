@@ -50,11 +50,14 @@ The endpoint returns a JSON object:
 project/
 ├── src/
 │   ├── app.js             # Main Express app
+│   ├── logger.js
 │   ├── routes/            # API routes
 │   │   ├── index.js
+│   │   └── handler.js
 │   │   └── scrape.js
 │   ├── services/          # Business logic
 │   │   ├── browser.js
+│   │   └── handler.js
 │   │   └── scrape.js
 │   ├── utils/             # Utilities
 │   │   └── validation.js
@@ -66,29 +69,8 @@ project/
 ├── package.json           # Node.js dependencies
 ├── .env                   # Environment variables
 ├── .dockerignore          # Docker ignore file
+├── .gitignore          # git ignore file
 └── README.md              # Documentation
-```
-
-## Development
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Run Locally
-
-Start the server:
-
-```bash
-node src/app.js
-```
-
-### Run Tests
-
-```bash
-npm test
 ```
 
 ## Environment Variables
