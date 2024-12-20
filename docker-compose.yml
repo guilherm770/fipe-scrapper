@@ -1,0 +1,12 @@
+services:
+  fipe-scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/home/appuser/app/src
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+

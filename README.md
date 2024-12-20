@@ -13,15 +13,15 @@ Ensure you have the following installed:
 
 ### Build and Run with Docker
 
-1. Build the Docker image:
+1. Build and Run the Docker image using Compose:
    ```bash
-   docker build -t puppeteer-scraper .
+   docker compose up -d --build
    ```
 
-2. Run the Docker container:
-   ```bash
-   docker run -p 3000:3000 puppeteer-scraper
-   ```
+You could also run this application by using Dockerfile
+```bash
+docker build -t puppeteer-scraper . && docker run -p 3000:3000 puppeteer-scraper
+```
 
 ### Accessing the Service
 
@@ -78,6 +78,8 @@ project/
 Create a `.env` file in the project root with the following content:
 
 ```env
+VERSION=1.0
+DEBUG_MODE=true
 PORT=3000
 PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
 ```
