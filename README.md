@@ -7,7 +7,6 @@ This project is a web scraping service built using Node.js, Puppeteer, and Expre
 Ensure you have the following installed:
 
 - Docker
-- Node.js (optional, if running locally)
 
 ## Getting Started
 
@@ -20,7 +19,7 @@ Ensure you have the following installed:
 
 You could also run this application by using Dockerfile
 ```bash
-docker build -t puppeteer-scraper . && docker run -p 3000:3000 puppeteer-scraper
+docker build -t fipe-scraper . && docker run --rm -d --env-file .env -p 3000:3000 fipe-scraper
 ```
 
 ### Accessing the Service
