@@ -50,7 +50,6 @@ The endpoint returns a JSON object:
 project/
 ├── src/
 │   ├── app.js             # Main Express app
-│   ├── logger.js
 │   ├── routes/            # API routes
 │   │   ├── index.js
 │   │   └── handler.js
@@ -64,6 +63,7 @@ project/
 │   └── config/            # Config files
 │       ├── puppeteer.js
 │       └── app.js
+│       └── logger.js
 ├── tests/                 # Test files
 ├── Dockerfile             # Dockerfile to build the app
 ├── package.json           # Node.js dependencies
