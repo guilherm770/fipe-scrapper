@@ -1,4 +1,4 @@
-# Puppeteer Scraper Service
+# FIPE Scraper Service
 
 This project is a web scraping service built using Node.js, Puppeteer, and Express. It provides an endpoint to scrape data based on the FIPE code and year specified in the query parameters.
 
